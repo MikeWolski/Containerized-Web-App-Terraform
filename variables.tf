@@ -9,3 +9,9 @@ variable "location" {
   type        = string
   default     = "East US"
 }
+
+variable "action_email" {
+  type        = string
+  description = "Email for receiving alerts"
+  default     = "wolski17@gmail.com"
+}
