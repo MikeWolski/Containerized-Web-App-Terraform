@@ -53,7 +53,7 @@ resource "azurerm_monitor_metric_alert" "network_alert" {
     metric_name      = "node_network_in_bytes"
     aggregation      = "Average"
     operator         = "GreaterThan"
-    threshold        = 70
+    threshold        = 80
   }
 
   action {
