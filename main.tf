@@ -1,3 +1,12 @@
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "mwtfstate"
+    storage_account_name = "mikwstorage"
+    container_name       = "mwtfcontainer"
+    key                  = "tf/terraform.tfstate"
+  }
+}
+
 # Configure the Azure provider
 provider "azurerm" {
   features {
